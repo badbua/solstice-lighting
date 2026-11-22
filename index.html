@@ -209,6 +209,12 @@
     *, *::before, *::after { animation:none !important; transition:none !important; }
   }
 </style>
+<!-- Meta Pixel (dataset "Solstice"). Events: PageView, Lead (quote request sent), Contact (call/text tap). -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1552389872779390');
+fbq('track','PageView');
+</script>
 </head>
 <body>
 
@@ -378,6 +384,7 @@
   <a class="logo" href="#top" aria-label="Solstice Lighting, back to top">Sol<b>stice</b><small>LIGHTING</small></a>
   <p>Christmas and permanent lighting · Wall Township, NJ</p>
   <p><a href="https://www.instagram.com/solsticelightingnj/" rel="noopener">Instagram @solsticelightingnj</a></p>
+  <p><small>This site uses the Meta Pixel to measure visits and quote requests from our ads. Details you send in the quote form are only used to contact you about your quote.</small></p>
 </footer>
 
 <script>
@@ -401,9 +408,15 @@
     document.getElementById('grid').append(img);
   }
 
+  // Meta events. A blocker can stop the pixel loading, so never let tracking break the page.
+  const track = (...a) => { try { window.fbq && fbq('track', ...a); } catch {} };
+
   if (PHONE) {
     for (const a of document.querySelectorAll('[data-tel]')) { a.href = 'tel:' + PHONE; a.hidden = false; }
     for (const a of document.querySelectorAll('[data-sms]')) { a.href = 'sms:' + PHONE; a.hidden = false; }
+    // A tap, not a confirmed call: Meta can't know whether it connected.
+    for (const a of document.querySelectorAll('[data-tel],[data-sms]'))
+      a.addEventListener('click', () => track('Contact', { method: a.hasAttribute('data-tel') ? 'call' : 'text' }));
   }
 
   // Permanent lighting color preview
@@ -437,6 +450,7 @@
       // shortcut: no-cors means we can't read the reply, so a server-side error still shows "thanks".
       // Upgrade to a readable response if leads ever go missing.
       await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(form)) });
+      if (!form.hp_check.value) track('Lead'); // not for bots that filled the hidden field
       form.reset();
       msg.textContent = 'Thanks! We’ll be in touch shortly.';
     } catch {
