@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solstice Lighting | Christmas & Permanent Lighting, Wall Township NJ</title>
+<meta name="description" content="Christmas light installation and permanent roofline lighting in Wall Township, Belmar, Manasquan, Brick, Howell and nearby Jersey Shore towns. Free quotes.">
+<meta name="theme-color" content="#060914">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060914'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23ffd9a0' opacity='.25'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffd9a0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#060914; --panel:#0c1222; --line:#ffffff1f; --ink:#f6f2ea; --body:#c9d0de; --muted:#9ba6ba;
+    --blue:#3aa0ff; --warm:#ffd9a0; --glow:255,196,120;
+    --sans:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --serif:"Instrument Serif",Georgia,serif;
+  }
+  * { box-sizing:border-box; margin:0; }
+  html { scroll-behavior:smooth; scroll-padding-top:88px; }
+  body {
+    color:var(--body); font:17px/1.6 var(--sans); -webkit-font-smoothing:antialiased; overflow-x:hidden;
+    background:
+      radial-gradient(900px 620px at 85% -80px, #1b3a7a66, transparent 65%),
+      radial-gradient(700px 520px at -10% 340px, #3b1f5a40, transparent 65%),
+      var(--bg);
+    background-repeat:no-repeat;
+  }
+  a { color:inherit; }
+  img { display:block; max-width:100%; }
+  :focus-visible { outline:3px solid var(--blue); outline-offset:3px; border-radius:6px; }
+  [hidden] { display:none !important; }
+  .wrap { max-width:1180px; margin-inline:auto; padding-inline:20px; }
+  section { padding-block:clamp(72px,10vw,128px); }
+
+  /* Type */
+  h1, h2, h3 { color:var(--ink); font-weight:700; letter-spacing:-.035em; line-height:1; }
+  h1 { font-size:clamp(46px,8.4vw,96px); line-height:.94; }
+  h2 { font-size:clamp(34px,5.4vw,60px); margin-bottom:16px; }
+  h3 { font-size:clamp(26px,3.4vw,38px); line-height:1.05; }
+  em { font-family:var(--serif); font-style:italic; font-weight:400; letter-spacing:-.01em; color:var(--warm);
+       text-shadow:0 0 34px rgba(var(--glow),.55); font-size:1.08em; }
+  .eyebrow { display:inline-flex; align-items:center; gap:10px; font-size:13px; font-weight:600; letter-spacing:.16em;
+             text-transform:uppercase; color:var(--warm); margin-bottom:18px; }
+  .eyebrow::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--warm);
+                     box-shadow:0 0 12px 3px rgba(var(--glow),.7); }
+  .eyebrow.blue { color:#7cc0ff; }
+  .eyebrow.blue::before { background:var(--blue); box-shadow:0 0 12px 3px #3aa0ffb0; }
+  .lede { font-size:clamp(17px,1.6vw,20px); max-width:56ch; }
+
+  /* Buttons */
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:12px 26px;
+         border-radius:999px; font:600 17px/1 var(--sans); text-decoration:none; cursor:pointer; color:var(--ink);
+         border:1px solid #ffffff3d; background:#ffffff0d; transition:transform .15s, box-shadow .2s, background .2s; }
+  .btn:hover { background:#ffffff1c; transform:translateY(-1px); }
+  .btn.primary { color:#1b1204; background:linear-gradient(#ffe7bf,#ffcf8a); border-color:transparent;
+                 box-shadow:0 0 0 1px #fff3 inset, 0 8px 36px rgba(var(--glow),.45); }
+  .btn.primary:hover { box-shadow:0 0 0 1px #fff3 inset, 0 10px 52px rgba(var(--glow),.7); }
+  .btn.sm { min-height:44px; padding:10px 20px; font-size:15px; }
+  .btn[disabled] { opacity:.6; cursor:wait; }
+
+  /* String of bulbs: two interleaved sets that breathe out of phase */
+  .lights { position:absolute; left:0; right:0; height:12px; pointer-events:none; }
+  .lights::before, .lights::after { content:""; position:absolute; inset:0;
+    background:radial-gradient(circle,#fff6e0 0 1.6px,rgba(var(--glow),.55) 2.4px,transparent 6px) 0 0/56px 12px repeat-x;
+    animation:twinkle 3.2s ease-in-out infinite alternate; }
+  .lights::after { background-position:28px 0; animation-delay:-3.2s; animation-direction:alternate-reverse; }
+  @keyframes twinkle { from { opacity:.3; } to { opacity:1; } }
+
+  /* Header */
+  .top { position:sticky; top:0; z-index:50; background:#060914d9; -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+         border-bottom:1px solid #ffffff14; }
+  .bar { display:flex; align-items:center; gap:10px; max-width:1180px; margin:0 auto; padding:12px 20px; }
+  .logo { font:italic 800 27px/1 var(--sans); letter-spacing:-.04em; color:#fff; text-decoration:none; margin-right:auto; padding-block:2px; }
+  .logo b { color:var(--blue); font-weight:inherit; }
+  .logo small { display:block; margin-top:4px; font:600 9px/1 var(--sans); letter-spacing:.52em; color:var(--muted); }
+  .bar nav { display:none; gap:28px; margin-right:18px; font-size:15px; font-weight:500; }
+  .bar nav a { text-decoration:none; color:var(--body); padding:12px 0; }
+  .bar nav a:hover { color:var(--ink); }
+
+  /* Hero */
+  .hero { padding:clamp(40px,6vw,84px) 0 clamp(56px,8vw,104px); }
+  .hero .wrap { display:grid; gap:36px; align-items:center; }
+  .pill { display:inline-flex; align-items:center; gap:10px; padding:8px 16px 8px 12px; border-radius:999px; font-size:14px;
+          font-weight:500; color:var(--ink); background:#ffffff0f; border:1px solid var(--line); margin-bottom:22px; }
+  .pill i { width:9px; height:9px; border-radius:50%; background:var(--warm); box-shadow:0 0 0 4px rgba(var(--glow),.18), 0 0 14px rgba(var(--glow),.9);
+            animation:twinkle 1.6s ease-in-out infinite alternate; }
+  .hero .lede { margin:22px 0 28px; }
+  .cta { display:flex; gap:12px; flex-wrap:wrap; }
+  .cta .primary { flex:1 1 220px; max-width:320px; }
+  @media (max-width:479px) { .cta .btn { flex:1 1 auto; } .cta .primary { flex-basis:100%; max-width:none; } }
+  .photo { position:relative; border-radius:24px; }
+  .photo img { width:100%; height:auto; object-fit:cover; border-radius:inherit;
+               box-shadow:0 0 0 1px #ffffff24, 0 30px 110px -20px rgba(var(--glow),.42); }
+  .photo img { aspect-ratio:3/2; }
+  .photo.blue img { box-shadow:0 0 0 1px #ffffff24, 0 30px 110px -20px #8a5cff80; }
+
+  /* Promise strip */
+  .strip { border-block:1px solid var(--line); }
+  .promise { list-style:none; padding-block:6px; display:grid; }
+  .promise li { padding:16px 0; font-weight:600; color:var(--ink); line-height:1.25; }
+  .promise li + li { border-top:1px solid var(--line); }
+  .promise span { display:block; font-weight:400; font-size:15px; color:var(--muted); margin-top:5px; line-height:1.4; }
+  /* Services */
+  .svc { display:grid; gap:28px; align-items:center; }
+  .svc + .svc { margin-top:clamp(64px,9vw,120px); }
+  .svc p { margin-top:14px; max-width:50ch; }
+  .ticks { list-style:none; padding:0; margin:20px 0 26px; display:grid; gap:10px; color:var(--ink); }
+  .ticks li { padding-left:26px; position:relative; }
+  .ticks li::before { content:""; position:absolute; left:2px; top:.6em; width:8px; height:8px; border-radius:50%;
+                      background:var(--warm); box-shadow:0 0 10px 2px rgba(var(--glow),.6); }
+  .perm .ticks li::before { background:var(--blue); box-shadow:0 0 10px 2px #3aa0ffa0; }
+
+  /* Permanent lighting color preview */
+  .demo { margin-top:22px; border:1px solid var(--line); border-radius:18px; overflow:hidden; background:#080c18; max-width:520px;
+          --c1:#ffdfb0; --c2:#ffdfb0; --c3:#ffdfb0; }
+  .eave { position:relative; display:flex; justify-content:space-around; height:104px; padding-top:13px; overflow:hidden;
+          background:repeating-linear-gradient(#131a2b 0 12px,#0e1422 12px 13px); border-top:9px solid #262f45; }
+  .eave i { position:relative; width:7px; height:7px; border-radius:50%; background:var(--c); box-shadow:0 0 10px 3px var(--c);
+            transition:background .4s, box-shadow .4s; --c:var(--c1); }
+  .eave i:nth-child(3n+2) { --c:var(--c2); }
+  .eave i:nth-child(3n) { --c:var(--c3); }
+  .eave i::after { content:""; position:absolute; top:3px; left:50%; width:46px; height:92px; transform:translateX(-50%);
+                   background:radial-gradient(ellipse 50% 100% at 50% 0,var(--c),transparent 72%); opacity:.5; }
+  .swatches { display:flex; flex-wrap:wrap; gap:8px; padding:14px; }
+  .swatches button { font:500 14px/1 var(--sans); color:var(--body); background:none; border:1px solid var(--line); border-radius:999px;
+                     min-height:44px; padding:8px 14px; cursor:pointer; }
+  .swatches button[aria-pressed=true] { color:#06101f; background:#e9f3ff; border-color:transparent; font-weight:600; }
+
+  /* Gallery */
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:36px; }
+  .grid img { width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px; background:var(--panel); }
+  .grid .big { grid-column:span 2; }
+
+  /* Steps */
+  .steps { list-style:none; padding:0; margin-top:44px; display:grid; gap:36px; counter-reset:s; position:relative; }
+  .steps::before { content:""; position:absolute; left:24px; top:24px; bottom:60px; width:2px;
+                   background:linear-gradient(rgba(var(--glow),.8),rgba(var(--glow),.15)); }
+  .steps li { counter-increment:s; position:relative; padding-left:72px; }
+  .steps li::before { content:counter(s); position:absolute; left:0; top:0; width:50px; height:50px; border-radius:50%;
+                      display:grid; place-items:center; font:700 20px/1 var(--sans); color:#1b1204; background:linear-gradient(#fff0d4,#ffcf8a);
+                      box-shadow:0 0 0 7px rgba(var(--glow),.13), 0 0 44px rgba(var(--glow),.6); }
+  .steps h3 { font-size:26px; padding-top:10px; margin-bottom:10px; }
+  .note { margin-top:36px; color:var(--muted); max-width:62ch; }
+  .note b { color:var(--ink); font-weight:600; }
+
+  /* Area */
+  .area { position:relative; text-align:center; overflow:hidden; border-block:1px solid var(--line); background:#080d1c; }
+  .area::before { content:""; position:absolute; inset:0; pointer-events:none;
+    background:repeating-radial-gradient(circle at 50% 50%,transparent 0 78px,#3aa0ff3d 78px 79px);
+    -webkit-mask-image:radial-gradient(circle at 50% 50%,#000,transparent 68%); mask-image:radial-gradient(circle at 50% 50%,#000,transparent 68%); }
+  .area .wrap { position:relative; }
+  .area .lede { margin-inline:auto; }
+  .facts { margin:34px auto 30px; max-width:760px; display:grid; gap:1px; background:#3aa0ff40; border:1px solid #3aa0ff40; border-radius:18px; overflow:hidden; }
+  .facts div { background:#080d1cf2; padding:18px 14px; }
+  .facts dt { font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#7cc0ff; }
+  .facts dd { margin-top:6px; font-size:20px; font-weight:600; color:var(--ink); letter-spacing:-.02em; }
+  .towns { list-style:none; padding:0; margin:34px auto 30px; max-width:760px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
+  .towns li { padding:10px 16px; border-radius:999px; border:1px solid #3aa0ff66; background:#080d1cf2; color:var(--ink); font-weight:600; font-size:15px; }
+  #how { padding-bottom:clamp(48px,6vw,72px); }
+
+  /* Quote */
+  .quote { display:grid; gap:36px; align-items:start; }
+  .quote .cta { margin-top:26px; }
+  form { position:relative; display:grid; gap:16px; padding:30px 22px 24px; border-radius:24px; border:1px solid var(--line);
+         background:linear-gradient(#111a30,#0a0f1d); box-shadow:0 30px 120px -40px rgba(var(--glow),.4); }
+  form .lights { top:-6px; left:22px; right:22px; }
+  .form2 { display:grid; gap:16px; }
+  label { display:grid; gap:7px; font-weight:600; font-size:15px; color:var(--ink); }
+  label small { font-weight:400; color:var(--muted); font-size:14px; }
+  input, select, textarea { font:400 17px/1.3 var(--sans); color:var(--ink); background:#050813; border:1px solid #5b6a8a; scroll-margin-top:130px;
+                            border-radius:12px; padding:14px; width:100%; min-height:52px; }
+  input:focus, select:focus, textarea:focus { outline:none; border-color:var(--warm); box-shadow:0 0 0 3px rgba(var(--glow),.3); }
+  .hp { position:absolute; left:-9999px; }
+  #msg { font-weight:600; color:var(--warm); }
+  #msg a { padding:11px 0; }
+  footer p a { display:inline-block; padding:11px 0; }
+
+  footer { padding:44px 20px 56px; text-align:center; color:var(--muted); font-size:15px; }
+  footer .logo { display:inline-block; margin:0 0 16px; }
+
+  @media (min-width:760px) {
+    .promise { grid-template-columns:repeat(3,1fr); gap:40px; }
+    .promise li { padding:22px 0; }
+    .promise li + li { border-top:0; }
+    .facts { grid-template-columns:repeat(3,1fr); }
+    .grid { grid-template-columns:repeat(4,1fr); gap:14px; }
+    .grid .big { grid-row:span 2; aspect-ratio:auto; }
+    .steps { grid-template-columns:repeat(3,1fr); gap:32px; }
+    .steps::before { left:24px; right:15%; top:24px; bottom:auto; width:auto; height:2px;
+                     background:linear-gradient(90deg,rgba(var(--glow),.8),rgba(var(--glow),.15)); }
+    .steps li { padding:72px 0 0; }
+    .form2 { grid-template-columns:1fr 1fr; }
+    form { padding:38px 34px 30px; }
+    form .lights { left:34px; right:34px; }
+  }
+  @media (min-width:960px) {
+    .bar nav { display:flex; }
+    .hero .wrap { grid-template-columns:1fr 1.08fr; gap:56px; }
+    .svc { grid-template-columns:1.1fr 1fr; gap:64px; }
+    .svc.perm .photo { order:2; }
+    .quote { grid-template-columns:1fr 1.1fr; gap:64px; }
+    .quote > div { position:sticky; top:120px; }
+    .photo { border-radius:30px; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    html { scroll-behavior:auto; }
+    *, *::before, *::after { animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="#top" aria-label="Solstice Lighting home">Sol<b>stice</b><small>LIGHTING</small></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+    </nav>
+    <a class="btn sm" data-tel hidden>Call</a>
+    <a class="btn primary sm" href="#quote">Free quote</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <!-- SEASONAL: swap or remove this line after the holidays. -->
+        <p class="pill"><i></i>Now booking Christmas installs</p>
+        <h1>Your home, <em>lit&nbsp;right.</em></h1>
+        <p class="lede">Christmas light installation and permanent roofline lighting at the Jersey Shore. We hang it and we take it down. You stay off the ladder.</p>
+        <div class="cta">
+          <a class="btn primary" href="#quote">Get a free quote</a>
+          <a class="btn" data-tel hidden>Call</a>
+          <a class="btn" data-sms hidden>Text us</a>
+        </div>
+      </div>
+      <figure class="photo">
+        <img src="img/w16.jpg" width="1200" height="800" fetchpriority="high" onerror="this.parentNode.remove()"
+             alt="Colonial home with warm white roofline lights and lit trees at dusk">
+      </figure>
+    </div>
+  </div>
+
+  <div class="strip">
+    <ul class="promise wrap">
+      <li>Custom fit<span>Lights cut and fitted to your roofline.</span></li>
+      <li>Done for you<span>We install it and we take it down.</span></li>
+      <li>Free quotes<span>Tell us about your home, get a price.</span></li>
+    </ul>
+  </div>
+
+  <section class="wrap" id="services">
+    <h2>Two ways to <em>light&nbsp;it&nbsp;up.</em></h2>
+    <p class="lede" style="margin-bottom:clamp(40px,6vw,72px)">For the holidays or for good. Either way we handle it from start to finish.</p>
+
+    <div class="svc">
+      <figure class="photo">
+        <img src="img/w13.jpg" width="1050" height="700" loading="lazy" onerror="this.parentNode.remove()"
+             alt="Ranch home with roofline lights and lit shrubs at dusk">
+      </figure>
+      <div>
+        <span class="eyebrow">Seasonal</span>
+        <h3>Christmas lighting</h3>
+        <p>Classic warm white or festive color on rooflines, bushes, trees and walkways.</p>
+        <ul class="ticks"><li>Custom fit to your home</li><li>Installed and taken down for you</li></ul>
+        <a class="btn" href="#quote" data-service="Christmas lighting">Quote my Christmas lights</a>
+      </div>
+    </div>
+
+    <div class="svc perm">
+      <figure class="photo blue">
+        <img src="img/w06.jpg" width="1090" height="726" loading="lazy" onerror="this.parentNode.remove()"
+             alt="Permanent roofline lighting glowing purple on a stone-front home">
+      </figure>
+      <div>
+        <span class="eyebrow blue">Year-round</span>
+        <h3>Permanent lighting</h3>
+        <p><b style="color:var(--ink)">Installed once. Lit for every season.</b> Change colors from an app for any holiday, game day or just a clean white glow.</p>
+        <div class="demo">
+          <div class="eave" id="eave" aria-hidden="true"></div>
+          <div class="swatches" id="swatches" role="group" aria-label="Preview a color scheme">
+            <button type="button" aria-pressed="true" data-c="#ffdfb0,#ffdfb0,#ffdfb0">Warm white</button>
+            <button type="button" aria-pressed="false" data-c="#ff3b30,#3ddc6e,#fff3dc">Christmas</button>
+            <button type="button" aria-pressed="false" data-c="#ff3b30,#f2f6ff,#3d7dff">July 4th</button>
+            <button type="button" aria-pressed="false" data-c="#ff8a1f,#a45cff,#ff8a1f">Halloween</button>
+          </div>
+        </div>
+        <ul class="ticks"><li>Any color, any night</li><li>No more yearly install</li></ul>
+        <a class="btn" href="#quote" data-service="Permanent lighting">Quote permanent lighting</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="work" aria-labelledby="work-h" style="padding-top:0">
+    <h2 id="work-h">Real homes, <em>really&nbsp;lit.</em></h2>
+    <p class="lede">Recent installs. More on <a href="https://www.instagram.com/solsticelightingnj/" rel="noopener">Instagram @solsticelightingnj</a>.</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="wrap" id="how" style="padding-top:0">
+    <h2>Three steps. <em>Zero&nbsp;ladders.</em></h2>
+    <ol class="steps">
+      <li><h3>Get a free quote</h3><p>Tell us about your home and what you have in mind. We get back to you with a price.</p></li>
+      <li><h3>We install</h3><p>We custom fit the lights to your home and hang everything.</p></li>
+      <li><h3>We take it down</h3><p>After the holidays we come back and take it all down. Nothing for you to untangle.</p></li>
+    </ol>
+    <p class="note"><b>Going permanent?</b> Skip step three. Installed once, lit for every season.</p>
+  </section>
+
+  <section class="area" id="area">
+    <div class="wrap">
+      <span class="eyebrow blue">Service area</span>
+      <h2>Lighting homes across <em>the Jersey&nbsp;Shore.</em></h2>
+      <p class="lede">Based in Wall Township, serving Monmouth and Ocean County. Don't see your town? Ask, it's free.</p>
+      <!-- TOWNS: edit this list to match where you actually take jobs -->
+      <ul class="towns">
+        <li>Wall Township</li>
+        <li>Belmar</li>
+        <li>Spring Lake</li>
+        <li>Sea Girt</li>
+        <li>Manasquan</li>
+        <li>Brielle</li>
+        <li>Point Pleasant</li>
+        <li>Brick</li>
+        <li>Howell</li>
+        <li>Neptune</li>
+        <li>Asbury Park</li>
+        <li>Lakewood</li>
+        <li>Freehold</li>
+        <li>Colts Neck</li>
+        <li>Toms River</li>
+      </ul>
+      <a class="btn" href="#quote">Ask about your town</a>
+    </div>
+  </section>
+
+  <section class="wrap quote" id="quote">
+    <div>
+      <span class="eyebrow">Free quote</span>
+      <h2>Let's get your <em>lights&nbsp;on.</em></h2>
+      <!-- SEASONAL: swap or remove the first sentence after the holidays. -->
+      <p class="lede">Christmas installs are going up now. Send a few details and we'll get back to you with a price.</p>
+      <div class="cta">
+        <a class="btn" data-tel hidden>Call</a>
+        <a class="btn" data-sms hidden>Text us</a>
+        <a class="btn" href="https://www.instagram.com/solsticelightingnj/" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <form id="form">
+      <div class="lights" aria-hidden="true"></div>
+      <div class="form2">
+        <label>Name <input name="name" required maxlength="100" autocomplete="name"></label>
+        <label>Phone <input name="phone" type="tel" required maxlength="30" autocomplete="tel"></label>
+      </div>
+      <label><span>Address or town <small>(optional)</small></span> <input name="address" maxlength="200" autocomplete="street-address"></label>
+      <label>What are you looking for?
+        <select name="service">
+          <option>Christmas lighting</option>
+          <option>Permanent lighting</option>
+          <option>Not sure</option>
+        </select>
+      </label>
+      <label><span>Anything we should know? <small>(optional)</small></span> <textarea name="notes" rows="3" maxlength="500"></textarea></label>
+      <label class="hp" aria-hidden="true">Leave this empty <input name="hp_check" tabindex="-1" autocomplete="off"></label>
+      <button class="btn primary" type="submit">Request my quote</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <a class="logo" href="#top" aria-label="Solstice Lighting, back to top">Sol<b>stice</b><small>LIGHTING</small></a>
+  <p>Christmas and permanent lighting · Wall Township, NJ</p>
+  <p><a href="https://www.instagram.com/solsticelightingnj/" rel="noopener">Instagram @solsticelightingnj</a></p>
+</footer>
+
+<script>
+  // Fill these in. Empty PHONE hides the call/text buttons; empty SCRIPT_URL sends people to Instagram instead.
+  const PHONE = '';       // e.g. '7325550100'
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY4axvcn0fVxixM6BBqKGa2J_6SbSQO9BmIjddl7DDn0fErM_gPy5aWvLpEX7SL8sIUg/exec';  // the /exec web app URL from tracker/SETUP.md
+
+  // [file, alt, layout class]. Web-sized crops (plates blurred); originals stay in img/ untouched.
+  // Hero (w16) and the two service photos (w13, w06) are not repeated here.
+  const PHOTOS = [
+    ['w12', 'Warm white roofline lights on a brick and gray home at night', 'big'],
+    ['w15', 'Red and green lights along a roofline and driveway'],
+    ['w09', 'Red and white Christmas lights on the roofline of a two-story home with lit bushes by the steps'],
+    ['w17', 'Permanent lighting in red and blue along a roofline'],
+    ['w11', 'Warm white lights across a home behind a large tree at night'],
+  ];
+  for (const [n, alt, cls] of PHOTOS) {
+    const img = new Image();
+    img.alt = alt; img.loading = 'lazy'; img.className = cls || ''; img.src = `img/${n}.jpg`;
+    img.onerror = () => img.remove(); // photo not added yet
+    document.getElementById('grid').append(img);
+  }
+
+  if (PHONE) {
+    for (const a of document.querySelectorAll('[data-tel]')) { a.href = 'tel:' + PHONE; a.hidden = false; }
+    for (const a of document.querySelectorAll('[data-sms]')) { a.href = 'sms:' + PHONE; a.hidden = false; }
+  }
+
+  // Permanent lighting color preview
+  eave.innerHTML = '<i></i>'.repeat(13);
+  swatches.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    b.dataset.c.split(',').forEach((c, i) => eave.parentNode.style.setProperty('--c' + (i + 1), c));
+    for (const x of swatches.children) x.setAttribute('aria-pressed', x === b);
+  });
+
+  // Service buttons preselect the form's service
+  for (const a of document.querySelectorAll('[data-service]'))
+    a.addEventListener('click', () => { form.service.value = a.dataset.service; });
+
+  const fallback = () => {
+    const a = document.createElement('a');
+    const d = PHONE.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
+    if (PHONE) { a.href = 'tel:' + PHONE; a.textContent = d.length === 10 ? `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` : PHONE; }
+    else { a.href = 'https://www.instagram.com/solsticelightingnj/'; a.rel = 'noopener'; a.textContent = '@solsticelightingnj'; }
+    msg.replaceChildren('Sorry, that didn’t go through. ' + (PHONE ? 'Call or text us at ' : 'Message us on Instagram '), a, '.');
+  };
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    // Spaces alone must not count as a name or phone.
+    for (const k of ['name', 'phone']) form.elements[k].value = form.elements[k].value.trim();
+    if (!form.reportValidity()) return;
+    const btn = form.querySelector('button');
+    btn.disabled = true;
+    try {
+      if (!SCRIPT_URL) throw new Error('not configured');
+      // shortcut: no-cors means we can't read the reply, so a server-side error still shows "thanks".
+      // Upgrade to a readable response if leads ever go missing.
+      await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(form)) });
+      form.reset();
+      msg.textContent = 'Thanks! We’ll be in touch shortly.';
+    } catch {
+      fallback();
+    }
+    btn.disabled = false;
+  });
+</script>
+</body>
+</html>
